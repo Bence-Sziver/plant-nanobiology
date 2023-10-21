@@ -1,0 +1,146 @@
+/* Universal */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #385623;
+}
+
+/* Header Section*/
+
+header {
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2.5rem;
+}
+
+#hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+#expandable-menu {
+    visibility: hidden;
+}
+
+img[src*='banner'] {
+    max-width: 100%;
+    height: auto;
+}
+
+header > div {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img[src*='logo'] {
+    max-width: 8%;
+    height: auto;
+}
+
+/* Header: Nav Section */
+
+nav {
+    display: inline-block;
+    width: 90%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+/* Main Section */
+
+main {
+    width: 50%;
+    height: 45rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.25rem;
+}
+
+h1 span {
+    font-weight: normal;
+}
+
+h1 strong {
+    font-weight: 700;
+}
+
+main p {
+    font-size: 1.75rem;
+    line-height: 2;
+    text-align: justify;
+    word-spacing: 0.75rem;
+}
+
+main img[src*='logo'] {
+    width: 35%;
+    height: auto;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1650px) {
+    header img[src*='logo'] {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1355px) {
+    nav {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        height: 2rem;
+        text-align: right;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    i {
+        transform: scale(3,2); 
+    }
+
+    header {
+        justify-content: space-between;
+        width: 90%;
+        margin-right: 0;
+    }
+}
