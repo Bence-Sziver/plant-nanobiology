@@ -49,7 +49,7 @@ header figcaption {
 }
 
 header figure img:hover {
-    webkit-filter: blur(4px);
+    /* webkit-filter: blur(4px); */
     filter: blur(4px);
     transition: webkit-filter .5s, filter .5s;
 }
