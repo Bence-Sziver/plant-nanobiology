@@ -4,27 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Növényi NaNObiológia Kutatócsoport</title>
   </head>
   <body>
-    <!-- Hamburger menu -->
-    <div id="hamburger-menu">
-      <i class="fa fa-bars" onclick="toggleMenus()"></i>
-    </div>
-    <div id="expandable-menu">
-      <a href="#">KEZDŐLAP</a>
-      <a href="#">MUNKATÁRSAK</a>
-      <a href="#">KUTATÁSAINK</a>
-      <a href="#">PUBLIKÁCIÓK</a>
-      <a href="#">MÉDIAMEGJELENÉSEK</a>
-      <a href="#">KAPCSOLAT</a>
-      <a href="#">EGYÜTTMŰKÖDÉSEINK</a>
-    </div>
     <!-- Header Section -->
     <header>
       <!-- Banner -->
-      <img src="./res/banner.png" alt="szárazságstressznek kitett Arabidopsis taliana">
+      <figure>
+        <img src="./res/banner.png" alt="szárazságstressznek kitett Arabidopsis taliana">
+        <figcaption>Szárazságstressznek kitett Arabidopsis taliana</figcaption>
+      </figure>
       <!-- Logo -->
       <div>
         <img src="./res/logo.png" alt="logo">
@@ -35,22 +28,22 @@
               <a href="#">KEZDŐLAP</a>
             </li>
             <li>
-              <a href="#">MUNKATÁRSAK</a>
+              <a href="./munkatarsak.html">MUNKATÁRSAK</a>
             </li>
             <li>
-              <a href="#">KUTATÁSAINK</a>
+              <a href="./kutatasaink.html">KUTATÁSAINK</a>
             </li>
             <li>
-              <a href="#">PUBLIKÁCIÓK</a>
+              <a href="./publikaciok.html">PUBLIKÁCIÓK</a>
             </li>
             <li>
-              <a href="#">MÉDIAMEGJELENÉSEK</a>
+              <a href="./media.html">MÉDIAMEGJELENÉSEK</a>
             </li>
             <li>
-              <a href="#">KAPCSOLAT</a>
+              <a href="./kapcsolat.html">KAPCSOLAT</a>
             </li>
             <li>
-              <a href="#">EGYÜTTMŰKÖDÉSEINK</a>
+              <a href="./egyuttmukodesek.html">EGYÜTTMŰKÖDÉSEINK</a>
             </li>
           </ul>
         </nav>
@@ -69,6 +62,20 @@
       </p>
       <img src="./res/logo.png" alt="logo">
     </main>
+    <footer>
+      <div>
+        <p>Szegedi Tudományegyetem<br>
+          Természettudományi és Informatikai Kar<br>
+          Biológia Intézet<br>
+          Növénybiológiai Tanszék<br>
+          Közép fasor 52.<br>
+          II. emelet<br>
+          Iroda: +36-62-544-307</p>
+        <div id="social-links">
+          <a href="https://www.facebook.com/rnssignalling" class="fa fa-facebook" target="_blank"></a>
+          <a href="mailto:ordgone.kolbert.zsuzsanna@szte.hu" class="fa fa-envelope" target="_blank"></a>
+        </div>  
+      </div>
+    </footer>
   </body>
-  <script src="./script.js"></script>
 </html>
