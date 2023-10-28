@@ -21,6 +21,13 @@ header {
   padding-bottom: 25px;
 }
 
+#index-page header {
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  position: relative;
+  gap: 0;
+}
+
 #menuToggle {
   display: none;
   position: fixed;
@@ -63,6 +70,18 @@ header {
   background: #385623;
   border-radius: 3px;
   z-index: 1;
+}
+
+#index-page #menuToggle {
+  background-color: hsla(120, 20%, 40%, 0.45);
+}
+
+#index-page #menuToggle img {
+  display: none;
+}
+
+#index-page #menuToggle span {
+  background: beige;
 }
 
 #menuToggle span {
@@ -254,7 +273,8 @@ main {
 }
 
 #index-page main {
-  position: static;
+  position: relative;
+  top: 100px;
 }
 
 #media-page main {
@@ -353,7 +373,7 @@ main p {
 }
 
 #index-page main figure {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 main img[src*='logo'] {
@@ -419,7 +439,8 @@ footer {
 }
 
 #index-page footer {
-  position: static;
+  position: relative;
+  top: 100px;
 }
 
 footer>div {
