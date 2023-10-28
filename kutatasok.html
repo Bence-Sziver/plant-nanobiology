@@ -1,137 +1,167 @@
 <!DOCTYPE html>
 <html lang="hu">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Növényi NaNObiológia Kutatócsoport</title>
-</head>
-
-<body>
-  <!-- Header Section -->
-  <header class="no-banner">
-    <!-- Logo -->
-    <div class="top-menu">
-      <img src="./res/logo.png" alt="logo">
-      <!-- Navbar -->
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">KEZDŐLAP</a>
-          </li>
-          <li>
-            <a href="#">MUNKATÁRSAK</a>
-          </li>
-          <li>
-            <a href="#">KUTATÁSAINK</a>
-          </li>
-          <li>
-            <a href="./publikaciok.html">PUBLIKÁCIÓK</a>
-          </li>
-          <li>
-            <a href="./media.html">MÉDIAMEGJELENÉSEK</a>
-          </li>
-          <li>
-            <a href="./kapcsolat.html">KAPCSOLAT</a>
-          </li>
-          <li>
-            <a href="./egyuttmukodesek.html">EGYÜTTMŰKÖDÉSEINK</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- Main Section -->
-  <main class="long-section kutatas">
-    <h1 class="page-title">KUTATÁSAINK</h1>
-    <section>
-      <h2>CÉL1: A szárazságtűrés fokozása nanoanyagokkal történő magedzéssel</h2>
-      <p>HÁTTÉR: Napjaink sürgető kihívása a haszonnövények szárazsággal szembeni tűrőképességének fokozása a
-        fenntartható mezőgazdaság elveivel összhangban. Egy ígéretes, zöld technológia a magedzés, ami védekezési
-        folyamatok indukciójával felvértezi a növényt a stresszel szemben. A nanoanyagok számos előnyös fizikai-kémiai
-        tulajdonsággal rendelkeznek, melyek kihasználhatók az edzés hatékonyságának fokozása érdekében. A
-        nitrogén-monoxid (NO) és a származtatott reaktív formák kémiai donorok vagy plazma-aktivált folyadékok (PAL)
-        formájában történő adagolása toleranciafokozó hatást fejt ki, csakúgy, mint a füstből származó karrikinek
-        (KAR).
-      </p>
-      <p>
-        KÉRDÉS: Ennek a gyakorlati megközelítésű, interdiszciplináris munkának a fő kérdése az, hogy az újonnan
-        fejlesztett nano NO donor és nano KAR, valamint a nanorészecskékkel stabilizált PAL hatékonyabb
-        szárazságtűrést fokozó ágensek-e a magedzés során, mint a nem nanoformák?
-      </p>
-      <p>
-        KÍSÉRLETI RENDSZER: A kérdés megválaszolása céljából növényházi modellrendszerekben végzünk kísérleteket
-        többszintű megközelítéssel. A szárazságra adott válaszokat sejt-, szerv- és szervezetszinten vizsgáljuk, és
-        transzkriptomikát, proteomikát és metabolomikát alkalmazunk a nanoanyagok toleranciafokozó hatásának
-        jellemzésére.
-      </p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Növényi NaNObiológia Kutatócsoport</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body id="kutatasok-page">
+    <!-- Top nav Section -->
+    <div id="menuToggle">
       <figure>
-        <img src="./res/munkafolyamat.png" alt="A munkafolyamat vázlata">
-        <figcaption>A munkafolyamat vázlata (seed priming=magedzés, PANC=plazma-aktivált nanokolloid, 
-          PAW=plazma-aktivált víz,
-          KAR2-CHT=kitozánba-csomagolt karrikin2, KAR2=karrikin2, DMON-SNO=dendrítikus, mezopórusos, szerves
-          szilícium-dioxid nanorészecske S-nitrozotiol módosítással, GSNO=S-nitrozo-glutation, PAW-M=plazma-aktivált víz
-          fémmel kiegészítve, pre-germination=előcsízáztatás, control=kontroll/nem kezelt, drought/osmotic
-          treatment=szárazság/ozmotikus kezelés, PEG-8000=polietilén-glikol-8000, water deprivation=vízmegvonás,
-          decapping=gyökérsüveg eltávolítás, plant analyses=növényi vizsgálatok, drought tolerance
-          parameters=szárazságtűrési paraméterek, root hair development=gyökérszőr fejlődés, root system
-          architecture=gyökérrendszer szerkezete, stomatal movements=gázcserenyílások nyitódása-záródása,
-          transcriptomics=transzkriptomika, metabolomics=metabolomika, proteomics=proteomika, root structure=
-          gyökérszerkezet).
-        </figcaption>
+        <img src="./res/logo.png" alt="logo">
       </figure>
-    </section>
-    <section>
-      <h2>CÉL2: Az ozmotikus stresszválaszhoz kapcsolódó új, nitrogén-nonoxid-kapcsolt gének azonosítása genetikai 
-        szűréssel
-      </h2>
-      <p>HÁTTÉR: Korábban egy 40 000 transzgenikus Arabidopsis thaliana (lúdfű) vonalat tartalmazó gyűjteményt hoztak 
-        létre,
-        melyben a cDNS könyvtár egy só, ozmotikus stressz és oxidatív stressz tűrő halofita növényfajból, a Lepidium
-        crassifolium növényből származik. Ezek a vonalak képezik a genetikai szűrés alapanyagát.
-      </p>
-      <p>KÉRDÉS: Ki tudunk-e szűrni olyan transzgenikus vonalat, mely a vad típushoz képest megváltozott választ mutat 
-        NO-ra,
-        ezáltal tudunk-e új, az ozmotikus stresszválaszban szerepet játszó, NO-kapcsolt gént azonosítani?
-      </p>
-      <p>
-        KÍSÉRLETI RENDSZER: A transzgenikus Arabidopsis thaliana növényeket NO jelenlétében neveljük, és megfigyeljük a 
-        vad típushoz képest eltérő növekedési-fejlődési válaszaikat. Az ígéretes jelölteket részletes genetikai és 
-        molekuláris biológiai vizsgálatoknak vetjük alá.
-      </p>
-    </section>
-    <section>
-      <h2>
-        CÉL3: Új, a növényi NO-dal kapcsolatos információkat tartalmazó tudományos weboldal fejlesztése
-      </h2>
-      <p>
-        HÁTTÉR: A projekt támogatni kívánja a kutatói közösséget azáltal, hogy tudományos weboldalon gyűjti össze a 
-        növényi NO-ról rendelkezésre álló ismereteket. Reményeink szerint egy felhasználóbarát weboldalon, gyorsan, egy 
-        helyen elérhető módon tudjuk az adatokat közzétenni.
-      </p>
-    </section>
-
-  </main>
-  <footer>
-    <div>
-      <p>Szegedi Tudományegyetem<br>
-        Természettudományi és Informatikai Kar<br>
-        Biológia Intézet<br>
-        Növénybiológiai Tanszék<br>
-        Közép fasor 52.<br>
-        II. emelet<br>
-        Iroda: +36-62-544-307</p>
-      <div id="social-links">
-        <a href="https://www.facebook.com/rnssignalling" class="fa fa-facebook" target="_blank"></a>
-        <a href="mailto:ordgone.kolbert.zsuzsanna@szte.hu" class="fa fa-envelope" target="_blank"></a>
-      </div>
+      <input type="checkbox">
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <li>
+          <a href="./index.html">KEZDŐLAP</a>
+        </li>
+        <li>
+          <a href="./munkatarsak.html">MUNKATÁRSAK</a>
+        </li>
+        <li>
+          <a href="./kutatasok.html">KUTATÁSAINK</a>
+        </li>
+        <li>
+          <a href="./publikaciok.html">PUBLIKÁCIÓK</a>
+        </li>
+        <li>
+          <a href="./media.html">MÉDIAMEGJELENÉSEK</a>
+        </li>
+        <li>
+          <a href="./kapcsolat.html">KAPCSOLAT</a>
+        </li>
+        <li>
+          <a href="./egyuttmukodesek.html">EGYÜTTMŰKÖDÉSEINK</a>
+        </li>
+      </ul>
     </div>
-  </footer>
-</body>
-
+    <!-- Header Section -->
+    <header>
+      <div>
+        <!-- Logo -->
+        <div>
+          <img src="./res/logo.png" alt="logo">
+        </div>
+        <!-- Navbar -->
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">KEZDŐLAP</a>
+            </li>
+            <li>
+              <a href="./munkatarsak.html">MUNKATÁRSAK</a>
+            </li>
+            <li>
+              <a href="./kutatasok.html">KUTATÁSAINK</a>
+            </li>
+            <li>
+              <a href="./publikaciok.html">PUBLIKÁCIÓK</a>
+            </li>
+            <li>
+              <a href="./media.html">MÉDIAMEGJELENÉSEK</a>
+            </li>
+            <li>
+              <a href="./kapcsolat.html">KAPCSOLAT</a>
+            </li>
+            <li>
+              <a href="./egyuttmukodesek.html">EGYÜTTMŰKÖDÉSEINK</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <h1>KUTATÁSAINK</h1>
+      <section>
+        <h2><span>CÉL1</span>: A szárazságtűrés fokozása nanoanyagokkal történő magedzéssel</h2>
+        <article>
+          <p><span>HÁTTÉR</span> Napjaink sürgető kihívása a haszonnövények szárazsággal szembeni tűrőképességének fokozása a 
+            fenntartható mezőgazdaság elveivel összhangban. Egy ígéretes, zöld technológia a magedzés, ami védekezési 
+            folyamatok indukciójával felvértezi a növényt a stresszel szemben. A nanoanyagok számos előnyös fizikai-kémiai 
+            tulajdonsággal rendelkeznek, melyek kihasználhatók az edzés hatékonyságának fokozása érdekében. A 
+            nitrogén-monoxid (NO) és a származtatott reaktív formák kémiai donorok vagy plazma-aktivált folyadékok (PAL) 
+            formájában történő adagolása toleranciafokozó hatást fejt ki, csakúgy, mint a füstből származó karrikinek (KAR). 
+          </p>
+        </article>
+        <article>
+          <p><span>KÍSÉRLETI RENDSZER</span> A kérdés megválaszolása céljából növényházi modellrendszerekben végzünk kísérleteket
+             többszintű megközelítéssel. A szárazságra adott válaszokat sejt-, szerv- és szervezetszinten vizsgáljuk, és 
+             transzkriptomikát, proteomikát és metabolomikát alkalmazunk a nanoanyagok toleranciafokozó hatásának 
+             jellemzésére. 
+          </p>
+        </article>
+        <figure>
+          <img src="./res/munkafolyamat.png" alt="A munkafolyamat vázlata">
+          <figcaption>A munkafolyamat vázlata (seed priming=magedzés, PANC=plazma-aktivált nanokolloid, 
+            PAW=plazma-aktivált víz, KAR2-CHT=kitozánba-csomagolt karrikin2, KAR2=karrikin2, DMON-SNO=dendrítikus, 
+            mezopórusos, szerves szilícium-dioxid nanorészecske S-nitrozotiol módosítással, GSNO=S-nitrozo-glutation, 
+            PAW-M=plazma-aktivált víz fémmel kiegészítve, pre-germination=előcsízáztatás, control=kontroll/nem kezelt, 
+            drought/osmotic treatment=szárazság/ozmotikus kezelés, PEG-8000=polietilén-glikol-8000, water 
+            deprivation=vízmegvonás, decapping=gyökérsüveg eltávolítás, plant analyses=növényi vizsgálatok, drought 
+            tolerance parameters=szárazságtűrési paraméterek, root hair development=gyökérszőr fejlődés, root system 
+            architecture=gyökérrendszer szerkezete, stomatal movements=gázcserenyílások nyitódása-záródása, 
+            transcriptomics=transzkriptomika, metabolomics=metabolomika, proteomics=proteomika, 
+            root structure= gyökérszerkezet).
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2><span>CÉL2</span>: Az ozmotikus stresszválaszhoz kapcsolódó új, nitrogén-nonoxid-kapcsolt gének azonosítása genetikai
+           szűréssel
+        </h2>
+        <article>
+          <p><span>HÁTTÉR</span> Korábban egy 40 000 transzgenikus Arabidopsis thaliana (lúdfű) vonalat tartalmazó gyűjteményt hoztak
+             létre, melyben a cDNS könyvtár egy só, ozmotikus stressz és oxidatív stressz tűrő halofita növényfajból, a
+              Lepidium crassifolium növényből származik. Ezek a vonalak képezik a genetikai szűrés alapanyagát.
+          </p>
+        </article>
+        <article>
+          <p><span>KÉRDÉS</span> Ki tudunk-e szűrni olyan transzgenikus vonalat, mely a vad típushoz képest megváltozott választ 
+            mutat NO-ra, ezáltal tudunk-e új, az ozmotikus stresszválaszban szerepet játszó, NO-kapcsolt gént azonosítani?
+          </p>
+        </article>
+        <article>
+          <p><span>KÍSÉRLETI RENDSZER</span> A transzgenikus Arabidopsis thaliana növényeket NO jelenlétében neveljük, és megfigyeljük
+             a vad típushoz képest eltérő növekedési-fejlődési válaszaikat. Az ígéretes jelölteket részletes genetikai és
+              molekuláris biológiai vizsgálatoknak vetjük alá.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2><span>CÉL3</span>: Új, a növényi NO-dal kapcsolatos információkat tartalmazó tudományos weboldal fejlesztése </h2>
+        <article>
+          <p><span>HÁTTÉR</span> A projekt támogatni kívánja a kutatói közösséget azáltal, hogy tudományos weboldalon gyűjti össze a
+             növényi NO-ról rendelkezésre álló ismereteket. Reményeink szerint egy felhasználóbarát weboldalon, gyorsan,
+              egy helyen elérhető módon tudjuk az adatokat közzétenni.
+          </p>
+        </article>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+      <div>
+        <p>Szegedi Tudományegyetem<br>
+          Természettudományi és Informatikai Kar<br>
+          Biológia Intézet<br>
+          Növénybiológiai Tanszék<br>
+          Közép fasor 52.<br>
+          II. emelet<br>
+          Iroda: +36-62-544-307</p>
+        <div id="social-links">
+          <a href="https://www.facebook.com/rnssignalling" class="fa fa-facebook" target="_blank"></a>
+          <a href="mailto:ordgone.kolbert.zsuzsanna@szte.hu" class="fa fa-envelope" target="_blank"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
