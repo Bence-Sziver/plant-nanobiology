@@ -73,7 +73,7 @@ header {
 }
 
 #index-page #menuToggle {
-  background-color: hsla(120, 20%, 40%, 0.45);
+  background-color: hsl(120, 25%, 85%);
 }
 
 #index-page #menuToggle img {
@@ -81,7 +81,7 @@ header {
 }
 
 #index-page #menuToggle span {
-  background: beige;
+  background: #385623;
 }
 
 #menuToggle span {
@@ -346,6 +346,7 @@ main p {
   margin-bottom: 20px;
 }
 
+
 .research {
   margin-bottom: 20px;
   font-size: 1.5rem;
@@ -370,6 +371,20 @@ main p {
 #munkatarsak-page main a {
   font-weight: 600;
   font-size: 4vw;
+}
+
+#publikaciok-page main a {
+  font-size: 3.5vw;
+  word-break: break-all;
+}
+
+#egyuttmukodesek-page main a {
+  /* font-size: 3.5vw; */
+  word-break: break-all;
+}
+
+#kapcsolat-page main a {
+  word-break: break-all;
 }
 
 #index-page main figure {
@@ -405,13 +420,16 @@ main img[src*='munkafolyamat'] {
   margin-bottom: 75px;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 215px;
   max-width: 100%;
 }
 
 .fb-page {
   max-width: 400px;
   margin-left: 10px;
+}
+
+#facebook-holder {
+  max-width: 1000px;
 }
 
 .next-to-fb {
@@ -501,11 +519,32 @@ footer p {
   nav a {
     font-size: 1.15vw;
   }
-}
+
+  .fb-page {
+    display: none !important;
+  }
+
+  #map {
+    max-width: 1000px;
+  }
+
+  #kapcsolat-page main {
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+  }
 
 @media (max-width: 1000px) {
   nav a {
     padding: 1.5vw;
+  }
+
+  #kapcsolat-page main {
+    gap: 25px;
+  }
+
+  #map {
+    max-width: 300px;
   }
 }
 
@@ -518,8 +557,30 @@ footer p {
     display: block;
   }
 
+  #index-page header {
+    position: relative;
+    top: 50px;
+  }
+  #index-page header figure {
+    padding-top: 0;
+  }
+
+  #index-page main {
+    position: relative;
+    top: 100px;
+  }
+
+  #index-page footer {
+    position: relative;
+    top: 50px;
+  }
+
   main {
     margin-top: -50px;
+  }
+
+  #kutatasok-page main figure { 
+    width: 100%;
   }
 }
 
@@ -535,6 +596,21 @@ footer p {
 
   main p {
     font-size: 1.3rem;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 550px) {
+  #kapcsolat-page main {
+    flex-direction: column;
+    margin-top: -25px;
+  }
+
+  #map {
+    margin: 0;
   }
 }
 
@@ -558,6 +634,11 @@ footer p {
   .fa-envelope {
     margin-top: 10px;
   }
+
+  #media-page main p {
+    border-bottom: 3px dashed #385623;
+    padding-bottom: 15px;
+  }
 }
 
 @media (max-width: 385px) {
@@ -570,4 +651,9 @@ footer p {
   #munkatarsak-page main a {
     font-size: 1.5rem;
   }
+
+  #publikaciok-page main a {
+    font-size: 1.5rem;
+  }
+}
 }
