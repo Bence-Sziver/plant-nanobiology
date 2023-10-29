@@ -370,16 +370,13 @@ main p {
 
 #munkatarsak-page main a {
   font-weight: 600;
-  font-size: 4vw;
 }
 
 #publikaciok-page main a {
-  font-size: 3.5vw;
   word-break: break-all;
 }
 
 #egyuttmukodesek-page main a {
-  /* font-size: 3.5vw; */
   word-break: break-all;
 }
 
@@ -653,6 +650,10 @@ footer p {
   }
 
   #publikaciok-page main a {
+    font-size: 1.5rem;
+  }
+
+  main a {
     font-size: 1.5rem;
   }
 }
