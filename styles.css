@@ -158,14 +158,17 @@ header {
 /* Header: Banner Section */
 
 header figure {
-  padding-top: 5px;
+  margin-top: 5px;
   position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  max-width: 1245px;
+  max-height: 422px;
 }
 
-img[src*='banner'] {
+header > figure img {
   max-width: 100%;
   height: auto;
-  border-radius: 50px;
 }
 
 header figcaption {
