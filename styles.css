@@ -32,8 +32,8 @@ header {
   display: none;
   position: fixed;
   width: 100%;
-  z-index: 1;
   background-color: hsl(120, 25%, 85%);
+  z-index: 3;
 }
 
 #menuToggle figure {
