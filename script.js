@@ -7,7 +7,7 @@ images[3] = "./res/kezdolap/CHT02_25_5.jpg";
 images[4] = "./res/kezdolap/gsnor_NO_5cP15.jpg";
 images[5] = "./res/kezdolap/Kontrol_cyc_2.png";
 let current = "./res/kezdolap/banner.png";
-let text;
+//let text;
 
 function setImg() {
     i = (i === images.length - 1) ? 0 : i + 1;
@@ -18,8 +18,6 @@ function setImg() {
         document.getElementById("bannerImg").setAttribute('src', images[i]);
         current = images[i];
         document.getElementById("bannerImg").classList.remove("transitioning-src");
-        text = (i === 0) ? "Szárazságstressznek kitett Arabidopsis thaliana" : "Lorem ipsum dolor sit amet";
-        document.getElementById("bannerCaption").innerHTML = text;
     }, 400);
 }
 

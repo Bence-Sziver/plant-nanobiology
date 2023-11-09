@@ -199,29 +199,6 @@ header figure {
   opacity: 0;
 }
 
-header figcaption {
-  position: absolute;
-  z-index: 1;
-  top: 80%;
-  left: 5%;
-  font-family: 'Playpen Sans';
-  color: beige;
-  font-size: 2.35vw;
-  opacity: 0.85;
-  visibility: hidden;
-}
-
-header figure img:hover {
-  /* webkit-filter: blur(4px); */
-  filter: blur(4px);
-  transition: webkit-filter .5s, filter .5s;
-}
-
-header figure:hover figcaption {
-  visibility: visible;
-  transition: visibility .5s;
-}
-
 header>div {
   display: flex;
   align-items: center;
