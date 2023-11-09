@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Növényi NaNObiológia Kutatócsoport</title>
-    <link rel="stylesheet" href="./styles.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body id="index-page" onload="startTimer()">
-    <!-- Top nav Section -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Növényi NaNObiológia Kutatócsoport</title>
+  <link rel="stylesheet" href="./styles.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="./script.js" type="text/javascript" defer></script>
+</head>
+<body id="index-page">
+  <!-- Top nav Section -->
   <div id="menuToggle">
     <figure>
       <img src="./res/logo.png" alt="logo">
@@ -44,74 +45,73 @@
       </li>
     </ul>
   </div>
-    <!-- Header Section -->
-    <header>
-      <!-- Banner -->
-      <figure>
-        <img src="./res/kezdolap/banner.png" alt="szárazságstressznek kitett Arabidopsis taliana" id="bannerImg" 
+  <!-- Header Section -->
+  <header>
+    <!-- Banner -->
+    <figure>
+      <img src="./res/kezdolap/banner.png" alt="szárazságstressznek kitett Arabidopsis taliana" id="bannerImg"
         class="parallax-slider">
-        <img src="#" alt="" id="fadeImg">
-        <figcaption id="bannerCaption">Szárazságstressznek kitett Arabidopsis thaliana</figcaption>
-      </figure>
+      <img src="#" alt="" id="fadeImg">
+    </figure>
+    <div>
+      <!-- Logo -->
       <div>
-        <!-- Logo -->
-        <div>
-          <img src="./res/logo.png" alt="logo">
-        </div>
-        <!-- Navbar -->
-        <nav>
-          <ul>
-            <li>
-              <a href="./index.html">KEZDŐLAP</a>
-            </li>
-            <li>
-              <a href="./munkatarsak.html">MUNKATÁRSAK</a>
-            </li>
-            <li>
-              <a href="./kutatasok.html">KUTATÁSAINK</a>
-            </li>
-            <li>
-              <a href="./publikaciok.html">PUBLIKÁCIÓK</a>
-            </li>
-            <li>
-              <a href="./media.html">MÉDIAMEGJELENÉSEK</a>
-            </li>
-            <li>
-              <a href="./kapcsolat.html">KAPCSOLAT</a>
-            </li>
-            <li>
-              <a href="./egyuttmukodesek.html">EGYÜTTMŰKÖDÉSEINK</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- Main Section -->
-    <main>
-      <h1>Üdvözöljük honlapunkon!</h1>
-      <p>Az MTA Lendület NaNObiológia Kutatócsoport az MTA Lendület program támogatásával alakult 2023-ban azzal a céllal,
-         hogy 2023 és 2028 közötti projektünk keretében tanulmányozzuk a növények szárazságtűrés-fokozásának lehetőségeit.
-      </p>
-      <figure>
         <img src="./res/logo.png" alt="logo">
-      </figure>
-    </main>
-    <!-- Footer Section -->
-    <footer>
-      <div>
-        <p>Szegedi Tudományegyetem<br>
-          Természettudományi és Informatikai Kar<br>
-          Biológia Intézet<br>
-          Növénybiológiai Tanszék<br>
-          Közép fasor 52.<br>
-          II. emelet<br>
-          Iroda: +36-62-544-307</p>
-        <div id="social-links">
-          <a href="https://www.facebook.com/rnssignalling" class="fa fa-facebook" target="_blank"></a>
-          <a href="mailto:ordogne.kolbert.zsuzsanna@szte.hu" class="fa fa-envelope" target="_blank"></a>
-        </div>  
       </div>
-    </footer>
-  </body>
-  <script src="./script.js" type="text/javascript"></script>
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">KEZDŐLAP</a>
+          </li>
+          <li>
+            <a href="./munkatarsak.html">MUNKATÁRSAK</a>
+          </li>
+          <li>
+            <a href="./kutatasok.html">KUTATÁSAINK</a>
+          </li>
+          <li>
+            <a href="./publikaciok.html">PUBLIKÁCIÓK</a>
+          </li>
+          <li>
+            <a href="./media.html">MÉDIAMEGJELENÉSEK</a>
+          </li>
+          <li>
+            <a href="./kapcsolat.html">KAPCSOLAT</a>
+          </li>
+          <li>
+            <a href="./egyuttmukodesek.html">EGYÜTTMŰKÖDÉSEINK</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Section -->
+  <main>
+    <h1>Üdvözöljük honlapunkon!</h1>
+    <p>Az MTA Lendület NaNObiológia Kutatócsoport az MTA Lendület program támogatásával alakult 2023-ban azzal a céllal,
+      hogy 2023 és 2028 közötti projektünk keretében tanulmányozzuk a növények szárazságtűrés-fokozásának lehetőségeit.
+    </p>
+    <figure>
+      <img src="./res/logo.png" alt="logo">
+    </figure>
+  </main>
+  <!-- Footer Section -->
+  <footer>
+    <div>
+      <p>Szegedi Tudományegyetem<br>
+        Természettudományi és Informatikai Kar<br>
+        Biológia Intézet<br>
+        Növénybiológiai Tanszék<br>
+        Közép fasor 52.<br>
+        II. emelet<br>
+        Iroda: +36-62-544-307</p>
+      <div id="social-links">
+        <a href="https://www.facebook.com/rnssignalling" class="fa fa-facebook" target="_blank"></a>
+        <a href="mailto:ordogne.kolbert.zsuzsanna@szte.hu" class="fa fa-envelope" target="_blank"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

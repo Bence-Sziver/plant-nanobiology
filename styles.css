@@ -12,21 +12,7 @@ body {
   background-color: beige;
 }
 
-/* Header Section*/
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 25px;
-}
-
-#index-page header {
-  padding-bottom: 0;
-  margin-bottom: 15px;
-  position: relative;
-  gap: 0;
-}
+/* Top Nav Section */
 
 #menuToggle {
   display: none;
@@ -155,6 +141,22 @@ header {
   left: 50px;
 }
 
+/* Header Section*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+#index-page header {
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  position: relative;
+  gap: 0;
+}
+
 /* Header: Banner Section */
 
 header figure {
@@ -190,6 +192,7 @@ header figure {
   -o-transition: opacity 0.4s ease-in;
   opacity: 1;
 }
+
 .transitioning-src {
   transition: opacity 0.4s ease-out;
   -webkit-transition: opacity 0.4s ease-out;
@@ -331,13 +334,13 @@ h1 {
   display: none;
 }
 
-#munkatarsak-page article > div {
+#munkatarsak-page article>div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#munkatarsak-page article > div > div {
+#munkatarsak-page article>div>div {
   margin-bottom: 20px;
 }
 
@@ -584,7 +587,7 @@ footer p {
     margin-bottom: 25px;
   }
 
-  #munkatarsak-page article > div > div {
+  #munkatarsak-page article>div>div {
     margin: 0;
   }
 }
@@ -616,6 +619,7 @@ footer p {
     position: relative;
     top: 50px;
   }
+
   #index-page header figure {
     padding-top: 0;
   }
@@ -634,7 +638,7 @@ footer p {
     margin-top: -50px;
   }
 
-  #kutatasok-page main figure { 
+  #kutatasok-page main figure {
     width: 100%;
   }
 }
