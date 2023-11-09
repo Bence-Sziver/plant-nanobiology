@@ -335,6 +335,31 @@ h1 {
 #munkatarsak-page h2 {
   font-size: 1.6rem;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+#munkatarsak-page article {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#munkatarsak-page article img {
+  max-width: 300px;
+  height: auto;
+  max-height: 450px;
+  border-radius: 20px;
+}
+
+#munkatarsak-page article > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#munkatarsak-page article p {
+  text-align: center;
 }
 
 #kutatasok-page h2 {
