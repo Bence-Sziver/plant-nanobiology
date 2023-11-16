@@ -1,11 +1,10 @@
 let images = [];
 let i = 0;
 images[0] = "./res/kezdolap/banner.png";
-images[1] = "./res/kezdolap/7sah7.jpg";
-images[2] = "./res/kezdolap/abra.jpg";
-images[3] = "./res/kezdolap/cht02_25_5.jpg";
-images[4] = "./res/kezdolap/gsnor_no_5cp15.jpg";
-images[5] = "./res/kezdolap/kontrol_cyc_2.png";
+images[1] = "./res/kezdolap/abra.jpg";
+images[2] = "./res/kezdolap/kontrol_cyc_2.png";
+images[3] = "./res/kezdolap/snap_154721_0124.jpg";
+images[4] = "./res/kezdolap/snap_092045_0001.jpg";
 let current = "./res/kezdolap/banner.png";
 
 addEventListener('load', startTimer);
