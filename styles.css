@@ -19,7 +19,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: hsl(120, 20%, 80%);
-  z-index: 2;
+  z-index: 3;
   padding-bottom: 5px;
 }
 
@@ -44,7 +44,7 @@ body {
   margin-bottom: 5px;
   background: #385623;
   border-radius: 3px;
-  z-index: 1;
+  z-index: 3;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   transform-origin: 4px 0px;
 }
@@ -65,7 +65,7 @@ body {
   height: 25px;
   cursor: pointer;
   opacity: 0;
-  z-index: 2;
+  z-index: 4;
 }
 
 #menuToggle input:checked~span {
@@ -88,7 +88,7 @@ body {
 
 #menu {
   position: absolute;
-  left: -1000px;
+  left: -1350px;
   top: 80px;
   width: 100%;
   margin: -100px 0 0 -50px;
@@ -100,6 +100,7 @@ body {
   -webkit-font-smoothing: antialiased;
   transition: left 0.5s;
   background-color: hsl(120, 20%, 80%);
+  z-index: 2;
 }
 
 #menu li {
@@ -115,9 +116,24 @@ body {
   font-weight: 600;
 }
 
+#menu #flag-container {
+  position: static;
+  margin: 0 auto;
+  width: 50px;
+  height: 30px;
+}
+
+ul #flag-li {
+  border-bottom-style: none;
+}
+
 #menu a:hover {
   background-color: hsl(120, 25%, 85%);
   text-shadow: 2px 2px beige;
+}
+
+#menu #flag-container a:hover {
+  background-color: initial;
 }
 
 #menu a:active {
@@ -192,9 +208,34 @@ header>div {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
   border-bottom: 2px solid rgb(104, 99, 99);
   background-color: hsl(120, 20%, 80%);
+}
+
+#flag-container {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+#munkatarsak-page header #flag-container {
+  top: 30px;
+}
+
+#flag-container:hover {
+  width: 55px;
+  height: 55px;
+  transition: width .5s ease-in-out, height .5s ease-in-out;
+}
+
+#flag-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 #index-page header>div {
@@ -265,6 +306,19 @@ main {
   margin-bottom: 65px;
   position: relative;
   top: 100px;
+}
+
+#index-page-en #centered-text{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#index-page-en p {
+  font-size: 5rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #index-page main {
@@ -518,7 +572,53 @@ footer p {
 
 /* Media Queries */
 
+@media (max-width: 1450px) {
+  #flag-container {
+    width: 30px;
+    height: 30px;
+  }
+
+  #flag-container:hover {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 @media (max-width: 1350px) {
+  header>div {
+    display: none;
+  }
+
+  .non-index nav {
+    display: none;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+
+  #index-page header {
+    top: 50px;
+  }
+
+  #index-page header figure {
+    padding-top: 0;
+  }
+
+  #index-page main {
+    position: relative;
+    top: 100px;
+  }
+
+  #index-page footer {
+    position: relative;
+    top: 50px;
+  }
+
+  main {
+    margin-top: -50px;
+  }
+
   header {
     gap: 20px;
   }
