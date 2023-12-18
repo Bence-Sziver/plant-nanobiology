@@ -431,6 +431,10 @@ main p {
   font-size: 1.3rem;
 }
 
+#kapcsolat-page article a {
+  font-size: 20px;
+}
+
 #egyuttmukodesek-page main p {
   font-size: 1.2rem;
 }
