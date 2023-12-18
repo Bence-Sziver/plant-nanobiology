@@ -308,17 +308,9 @@ main {
   top: 100px;
 }
 
-#index-page-en #centered-text{
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
-#index-page-en p {
-  font-size: 5rem;
-  font-weight: bold;
-  font-style: italic;
+.index-page-en h1 span {
+  display: block;
+  font-weight: normal;
 }
 
 #index-page main {
