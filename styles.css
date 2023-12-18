@@ -209,8 +209,21 @@ header>div {
   top: 0;
   left: 0;
   z-index: 1;
+  width: 100%;
   border-bottom: 2px solid rgb(104, 99, 99);
   background-color: hsl(120, 20%, 80%);
+}
+
+.english header>div nav {
+  width: 75%;
+}
+
+.english header>div {
+  gap: 50px;
+}
+
+.media-list-item {
+  white-space: nowrap;
 }
 
 #flag-container {
@@ -260,6 +273,10 @@ header img[src*='logo'] {
 
 nav {
   width: 82.5%;
+}
+
+.index-page-en nav {
+  width: 75%;
 }
 
 nav ul {
