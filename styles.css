@@ -406,6 +406,10 @@ h1 {
   margin-bottom: 30px;
 }
 
+#publikaciok-page .big-link {
+  font-size: 28px;
+}
+
 #media-page h2 {
   text-align: center;
   font-size: 2rem;
