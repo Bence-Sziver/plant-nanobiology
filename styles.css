@@ -209,8 +209,21 @@ header>div {
   top: 0;
   left: 0;
   z-index: 1;
+  width: 100%;
   border-bottom: 2px solid rgb(104, 99, 99);
   background-color: hsl(120, 20%, 80%);
+}
+
+.english header>div nav {
+  width: 75%;
+}
+
+.english header>div {
+  gap: 50px;
+}
+
+.media-list-item {
+  white-space: nowrap;
 }
 
 #flag-container {
@@ -262,6 +275,10 @@ nav {
   width: 82.5%;
 }
 
+.index-page-en nav {
+  width: 75%;
+}
+
 nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -308,17 +325,9 @@ main {
   top: 100px;
 }
 
-#index-page-en #centered-text{
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
-#index-page-en p {
-  font-size: 5rem;
-  font-weight: bold;
-  font-style: italic;
+.index-page-en h1 span {
+  display: block;
+  font-weight: normal;
 }
 
 #index-page main {
@@ -328,6 +337,15 @@ main {
 
 #media-page main {
   margin-bottom: 150px;
+}
+
+#media-page main p {
+  border-bottom: 2px dashed lightgray;
+  padding-bottom: 30px;
+}
+
+#media-page main p {
+  margin-bottom: 0;
 }
 
 main section {
@@ -397,6 +415,10 @@ h1 {
   margin-bottom: 30px;
 }
 
+#publikaciok-page .big-link {
+  font-size: 28px;
+}
+
 #media-page h2 {
   text-align: center;
   font-size: 2rem;
@@ -416,10 +438,21 @@ main p {
 
 #kapcsolat-page main p {
   font-size: 1.3rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#kapcsolat-page article a {
+  font-size: 20px;
 }
 
 #egyuttmukodesek-page main p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+#egyuttmukodesek-page main p:nth-child(1) {
+  font-weight: bold;
+  font-style: italic;
 }
 
 #egyuttmukodesek-page article {
@@ -448,6 +481,16 @@ main p {
   display: block;
 }
 
+#kutatasok-page article {
+  max-width: 1000px;
+  margin: 100px auto;
+  margin-top: 0;
+}
+
+#kutatasok-page h1 {
+  margin-bottom: 80px;
+}
+
 #munkatarsak-page main a {
   font-weight: 600;
 }
@@ -468,6 +511,10 @@ main p {
   max-width: 200px;
 }
 
+#index-page main p {
+  max-width: 1100px;
+}
+
 main img[src*='logo'] {
   margin-top: 50px;
   max-width: 100%;
@@ -477,6 +524,11 @@ main img[src*='logo'] {
 #kutatasok-page main figure {
   margin: 0 auto;
   width: 70%;
+}
+
+#kutatasok-page section {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed lightgray;
 }
 
 main img[src*='munkafolyamat'] {
