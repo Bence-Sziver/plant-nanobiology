@@ -339,6 +339,15 @@ main {
   margin-bottom: 150px;
 }
 
+#media-page main p {
+  border-bottom: 2px dashed lightgray;
+  padding-bottom: 30px;
+}
+
+#media-page main p {
+  margin-bottom: 0;
+}
+
 main section {
   margin-bottom: 50px;
 }
@@ -429,6 +438,8 @@ main p {
 
 #kapcsolat-page main p {
   font-size: 1.3rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #kapcsolat-page article a {
@@ -436,7 +447,12 @@ main p {
 }
 
 #egyuttmukodesek-page main p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+#egyuttmukodesek-page main p:nth-child(1) {
+  font-weight: bold;
+  font-style: italic;
 }
 
 #egyuttmukodesek-page article {
@@ -465,6 +481,16 @@ main p {
   display: block;
 }
 
+#kutatasok-page article {
+  max-width: 1000px;
+  margin: 100px auto;
+  margin-top: 0;
+}
+
+#kutatasok-page h1 {
+  margin-bottom: 80px;
+}
+
 #munkatarsak-page main a {
   font-weight: 600;
 }
@@ -485,6 +511,10 @@ main p {
   max-width: 200px;
 }
 
+#index-page main p {
+  max-width: 1100px;
+}
+
 main img[src*='logo'] {
   margin-top: 50px;
   max-width: 100%;
@@ -494,6 +524,11 @@ main img[src*='logo'] {
 #kutatasok-page main figure {
   margin: 0 auto;
   width: 70%;
+}
+
+#kutatasok-page section {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed lightgray;
 }
 
 main img[src*='munkafolyamat'] {
