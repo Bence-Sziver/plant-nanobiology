@@ -339,6 +339,10 @@ main {
   margin-bottom: 150px;
 }
 
+#media-page article {
+  padding: 20px;
+}
+
 #media-page main p {
   border-bottom: 2px dashed lightgray;
   padding-bottom: 30px;
