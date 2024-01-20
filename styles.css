@@ -409,6 +409,10 @@ h1 {
   font-size: 1.6rem;
 }
 
+#publikaciok-page main section {
+  margin-bottom: 0;
+}
+
 #publikaciok-page h2 {
   text-align: center;
   font-size: 2rem;
@@ -788,6 +792,10 @@ footer p {
   }
 
   main p {
+    font-size: 1.3rem;
+  }
+
+  #publikaciok-page main section .big-link {
     font-size: 1.3rem;
   }
 
