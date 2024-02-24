@@ -26,6 +26,7 @@ body {
 #menuToggle figure {
   width: 60px;
   height: 20px;
+  /* display: none; */
 }
 
 #menuToggle img {
@@ -88,7 +89,7 @@ body {
 
 #menu {
   position: absolute;
-  left: -1350px;
+  left: -1600px;
   top: 80px;
   width: 100%;
   margin: -100px 0 0 -50px;
@@ -150,7 +151,7 @@ header {
 }
 
 #index-page header {
-  padding-bottom: 0;
+  padding-bottom: 25px;
   margin-bottom: 15px;
   position: relative;
   gap: 0;
@@ -165,6 +166,18 @@ header figure {
   overflow: hidden;
   max-width: 1245px;
   max-height: 422px;
+}
+
+#bannerLogo {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  gap: 50px;
+}
+
+#bannerLogo div {
+  max-width: 15%;
 }
 
 #bannerImg {
@@ -201,11 +214,13 @@ header figure {
   opacity: 0;
 }
 
-header>div {
+#navElements {
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
+  padding-top: 15px;
+  padding-bottom: 20px;
   top: 0;
   left: 0;
   z-index: 1;
@@ -214,11 +229,11 @@ header>div {
   background-color: hsl(120, 20%, 80%);
 }
 
-.english header>div nav {
-  width: 75%;
+.english #navElements nav {
+  width: 80%;
 }
 
-.english header>div {
+.english #navElements {
   gap: 50px;
 }
 
@@ -251,17 +266,22 @@ header>div {
   cursor: pointer;
 }
 
-#index-page header>div {
+#index-page #navElements {
   position: static;
   border-bottom: 0px none beige;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #index-page header {
   background-color: hsl(120, 20%, 80%);
+  gap: 25px;
 }
 
-header>div div {
-  max-width: 8%;
+#logo {
+  max-width: 4%;
+  position: absolute;
+  left: 0;
 }
 
 header img[src*='logo'] {
@@ -272,11 +292,11 @@ header img[src*='logo'] {
 /* Header: Nav Section */
 
 nav {
-  width: 82.5%;
+  width: 89%;
 }
 
 .index-page-en nav {
-  width: 75%;
+  width: 80%;
 }
 
 nav ul {
@@ -295,7 +315,7 @@ nav a {
   border-radius: 10px;
   box-shadow: 2px 5px;
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 0.95vw; /* #index-page nav a */
   font-weight: 800;
 }
 
@@ -334,6 +354,10 @@ main {
   position: relative;
   top: 100px;
 }
+
+ #index-page header a {
+  font-size: 0.95vw;
+ }
 
 #media-page main {
   margin-bottom: 150px;
@@ -467,6 +491,21 @@ main p {
   margin-bottom: 20px;
 }
 
+#csatlakozas-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#csatlakozas-page main {
+  flex-grow: 1;
+  margin-top: 150px;
+}
+
+#csatlakozas-page main,
+#csatlakozas-page footer {
+  position: static;
+}
 
 .research {
   margin-bottom: 20px;
@@ -632,29 +671,35 @@ footer p {
 
 /* Media Queries */
 
-@media (max-width: 1450px) {
-  #flag-container {
-    width: 30px;
-    height: 30px;
-  }
-
-  #flag-container:hover {
-    width: 30px;
-    height: 30px;
+@media (max-width: 1700px) {
+  #bannerLogo {
+    gap: 20px;
   }
 }
 
-@media (max-width: 1350px) {
-  header>div {
-    display: none;
+@media (max-width: 1670px) {
+  #flag-container {
+    width: 40px;
+    height: 40px;
   }
 
+  #flag-container:hover {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1635px) {
   .non-index nav {
     display: none;
   }
 
   #menuToggle {
     display: block;
+  }
+
+  #bannerLogo div {
+    display: none;
   }
 
   #index-page header {
@@ -667,40 +712,28 @@ footer p {
 
   #index-page main {
     position: relative;
-    top: 100px;
+    top: 150px;
   }
 
   #index-page footer {
     position: relative;
-    top: 50px;
+    top: 100px;
   }
 
   main {
     margin-top: -50px;
   }
 
-  header {
+  .non-index main {
+    margin-top: -25px;
+  }
+
+  /* header {
     gap: 20px;
-  }
+  } */
 
-  header>div div {
+  #navElements {
     display: none;
-  }
-
-  header>div {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-
-  nav {
-    width: 100%;
-  }
-
-  nav a {
-    font-size: 1.15vw;
   }
 
   .fb-page {
@@ -716,7 +749,6 @@ footer p {
     gap: 100px;
     align-items: center;
   }
-
 
 }
 
@@ -750,35 +782,6 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-  header>div {
-    display: none;
-  }
-
-  #menuToggle {
-    display: block;
-  }
-
-  #index-page header {
-    top: 50px;
-  }
-
-  #index-page header figure {
-    padding-top: 0;
-  }
-
-  #index-page main {
-    position: relative;
-    top: 100px;
-  }
-
-  #index-page footer {
-    position: relative;
-    top: 50px;
-  }
-
-  main {
-    margin-top: -50px;
-  }
 
   #kutatasok-page main figure {
     width: 100%;
