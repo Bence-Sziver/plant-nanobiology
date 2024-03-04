@@ -474,6 +474,23 @@ main p {
   font-style: italic;
 }
 
+#csatlakozas-page #joinImg {
+  margin-top: 45px;
+  width: 851px;
+  height: 1201px;
+}
+
+#csatlakozas-page h1 {
+  margin-bottom: 45px;
+}
+
+#csatlakozas-page #joinFigure {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #kapcsolat-page article a {
   font-size: 20px;
 }
@@ -499,7 +516,7 @@ main p {
 
 #csatlakozas-page main {
   flex-grow: 1;
-  margin-top: 150px;
+  margin-top: 125px;
 }
 
 #csatlakozas-page main,
@@ -788,6 +805,13 @@ footer p {
   }
 }
 
+@media (max-width: 870px) {
+  #csatlakozas-page #joinImg {
+    width: 700px;
+    height: auto;
+  }
+}
+
 @media (max-width: 750px) {
   footer>div {
     text-align: left;
@@ -811,10 +835,28 @@ footer p {
   }
 }
 
+@media (max-width: 720px) {
+  #csatlakozas-page #joinImg {
+    width: 550px;
+  }
+}
+
+@media (max-width: 570px) {
+  #csatlakozas-page #joinImg {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media (max-width: 550px) {
   #kapcsolat-page main {
     flex-direction: column;
     margin-top: -25px;
+  }
+
+  #csatlakozas-page main {
+    margin-top: 70px;
+    margin-bottom: 50px;
   }
 
   #map {
@@ -823,6 +865,11 @@ footer p {
 }
 
 @media (max-width: 460px) {
+  #csatlakozas-page #joinFigure {
+    width: 105vw;
+    overflow: hidden;
+  }
+
   #munkatarsak-page article img {
     max-width: 250px;
     transition: max-width .5s ease-in-out;
