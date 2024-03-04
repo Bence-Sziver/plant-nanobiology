@@ -745,6 +745,10 @@ footer p {
     margin-top: -25px;
   }
 
+  #csatlakozas-page main {
+    margin-top: 80px;
+  }
+
   /* header {
     gap: 20px;
   } */
