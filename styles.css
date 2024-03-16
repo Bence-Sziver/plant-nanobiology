@@ -432,19 +432,38 @@ h1 {
 }
 
 #kutatasok-page #bannerLeft {
-  left: 50px;
+  left: 10px;
 }
 
 #kutatasok-page #bannerRight {
-  right: 50px;
+  right: 10px;
   filter: brightness(65%);
 }
 
 #kutatasok-page .banner {
-  position: fixed;
+  position: sticky;
   top: 150px;
   width: 220px;
   height: auto;
+}
+
+#kutatasok-page main {
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+  margin-top: 25px;
+  position: relative;
+  top: 100px;
+}
+
+#kutatasok-page main #middleSection {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 25px; */
+  /* margin-bottom: 65px; */
 }
 
 #kutatasok-page h2 {
