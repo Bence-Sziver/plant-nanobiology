@@ -432,15 +432,17 @@ h1 {
 }
 
 #kutatasok-page #bannerLeft {
-  left: 80px;
+  left: 50px;
 }
 
 #kutatasok-page #bannerRight {
-  right: 80px;
+  right: 50px;
+  filter: brightness(65%);
 }
 
 #kutatasok-page .banner {
   position: fixed;
+  top: 150px;
   width: 220px;
   height: auto;
 }
@@ -721,6 +723,9 @@ footer p {
 }
 
 @media (max-width: 1635px) {
+  #kutatasok-page .banner {
+    display: none;
+  }
   .non-index nav {
     display: none;
   }
