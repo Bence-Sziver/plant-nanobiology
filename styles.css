@@ -742,9 +742,6 @@ footer p {
 }
 
 @media (max-width: 1635px) {
-  #kutatasok-page .banner {
-    display: none;
-  }
   .non-index nav {
     display: none;
   }
@@ -809,6 +806,12 @@ footer p {
     align-items: center;
   }
 
+}
+
+@media (max-width: 1600px) {
+  #kutatasok-page .banner {
+    display: none;
+  }
 }
 
 @media (max-width: 1175px) {
