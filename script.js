@@ -3,19 +3,21 @@ let i = 0;
 let loc = window.location.pathname.split("/")[1];
 let current;
 if (loc === "en") {
-  images[0] = "../res/kezdolap/banner.png";
-  images[1] = "../res/kezdolap/abra.jpg";
-  images[2] = "../res/kezdolap/kontrol_cyc_2.png";
-  images[3] = "../res/kezdolap/snap_154721_0124.jpg";
-  images[4] = "../res/kezdolap/snap_092045_0001.jpg";
-  current = "../res/kezdolap/banner.png";
+  images[0] = "../res/kezdolap/csoportkepCropped.jpg";
+  images[1] = "../res/kezdolap/banner.png";
+  images[2] = "../res/kezdolap/abra.jpg";
+  images[3] = "../res/kezdolap/kontrol_cyc_2.png";
+  images[4] = "../res/kezdolap/snap_154721_0124.jpg";
+  images[5] = "../res/kezdolap/snap_092045_0001.jpg";
+  current = "../res/kezdolap/csoportkepCropped.jpg";
 } else {
-  images[0] = "./res/kezdolap/banner.png";
-  images[1] = "./res/kezdolap/abra.jpg";
-  images[2] = "./res/kezdolap/kontrol_cyc_2.png";
-  images[3] = "./res/kezdolap/snap_154721_0124.jpg";
-  images[4] = "./res/kezdolap/snap_092045_0001.jpg";
-  current = "./res/kezdolap/banner.png";
+  images[0] = "./res/kezdolap/csoportkepCropped.jpg";
+  images[1] = "./res/kezdolap/banner.png";
+  images[2] = "./res/kezdolap/abra.jpg";
+  images[3] = "./res/kezdolap/kontrol_cyc_2.png";
+  images[4] = "./res/kezdolap/snap_154721_0124.jpg";
+  images[5] = "./res/kezdolap/snap_092045_0001.jpg";
+  current = "./res/kezdolap/csoportkepCropped.jpg";
 }
 
 addEventListener("load", startTimer);
