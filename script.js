@@ -35,5 +35,5 @@ function setImg() {
 }
 
 function startTimer() {
-  setInterval(setImg, 5000);
+  setInterval(setImg, 4000);
 }
