@@ -526,6 +526,19 @@ main p {
   align-items: center;
 }
 
+#csatlakozas-page #thesisFigure {
+  width: 99vw;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#csatlakozas-page #thesisImg {
+  max-width: 70%;
+  height: auto;
+}
+
 #kapcsolat-page article a {
   font-size: 20px;
 }
@@ -814,9 +827,19 @@ footer p {
   }
 }
 
+@media (max-width: 1300px) {
+  #csatlakozas-page #thesisImg {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 1175px) {
   #munkatarsak-page article img {
     display: none;
+  }
+
+  #csatlakozas-page #thesisImg {
+    max-width: 100%;
   }
 
   #munkatarsak-page #small-viewport-img {
@@ -854,6 +877,10 @@ footer p {
   #csatlakozas-page #joinImg {
     width: 700px;
     height: auto;
+  }
+
+  #csatlakozas-page #thesisImg {
+    content:url("./res/csatlakozas/szakdolgozatiTemakCropped.png");
   }
 }
 
