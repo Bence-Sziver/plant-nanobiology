@@ -734,6 +734,10 @@ footer p {
   padding-left: 40px;
 }
 
+.wrap-link {
+  overflow-wrap: anywhere;
+}
+
 /* Media Queries */
 
 @media (max-width: 1700px) {
