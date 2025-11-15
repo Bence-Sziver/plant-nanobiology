@@ -431,6 +431,10 @@ h1 {
   text-align: center;
 }
 
+#munkatarsak-page .hidden-fill-text {
+  visibility: hidden;
+}
+
 #kutatasok-page #bannerLeft {
   left: 10px;
 }
