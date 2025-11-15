@@ -850,6 +850,14 @@ footer p {
     display: none;
   }
 
+  #munkatarsak-page article>div.no-info-section {
+    margin-top: 0;
+  }
+
+  #munkatarsak-page article>div.no-info-section>div {
+    margin-bottom: -85px;
+  }
+
   #csatlakozas-page #thesisImg {
     max-width: 100%;
   }
