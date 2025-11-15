@@ -413,7 +413,7 @@ h1 {
   max-height: 450px;
 }
 
-#munkatarsak-page #small-viewport-img {
+#munkatarsak-page .small-viewport-img {
   display: none;
 }
 
@@ -421,6 +421,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#munkatarsak-page article>div.no-info-section {
+  margin-top: 100px;
 }
 
 #munkatarsak-page article>div>div {
@@ -850,7 +854,7 @@ footer p {
     max-width: 100%;
   }
 
-  #munkatarsak-page #small-viewport-img {
+  #munkatarsak-page .small-viewport-img {
     display: inline-block;
     margin-bottom: 25px;
   }
