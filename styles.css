@@ -484,14 +484,29 @@ h1 {
   margin-bottom: 0;
 }
 
+#publikaciok-page h1 {
+  margin-bottom: 50px;
+}
+
 #publikaciok-page h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+#publikaciok-page article {
+  margin-bottom: 75px;
 }
 
 #publikaciok-page .big-link {
   font-size: 28px;
+}
+
+#publikaciok-page .pubTitle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: italic;
+  font-size: 1.8rem;
 }
 
 #media-page h2 {
@@ -509,6 +524,11 @@ main p {
 
 #media-page p {
   margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+#media-page p.firstMedia {
+  margin-top: 0;
 }
 
 #kapcsolat-page main p {
